@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background: #000;
+}
+
+/* Add these styles to your global stylesheet or Tailwind CSS */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+  }
+  
+  /* styles.css or equivalent file */
+
+.cards-row {
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer */
+}
+
+.cards-row::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-1 {
+    width: 200px; /* Adjust card size for smaller screens */
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-1 {
+    width: 150px; /* Further adjust for very small screens */
+    height: 200px;
+  }
+}
+
+.flex {
+  scroll-behavior: smooth;
+}
+
+.flex::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari and Opera */
+}
+
+.flex {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* styles.css */
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (max-width: 640px) {
+  .CardCarousel div {
+    flex-direction: column; /* Stack cards vertically on small screens */
+  }
+
+  .CardCarousel button {
+    top: 90%; /* Adjust button position */
+  }
+}
