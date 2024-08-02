@@ -1,5 +1,7 @@
+import Card from './components/Card';
 import MainElement from './components/MainElement';
 import './index.css'; // Make sure this is correct and the file exists
+import Category from './pages/CategoryPage/Category';
 import Homepage from './pages/Homepage/Homepage';
 // import Navbar from './pages/Homepage/Navbar';
 import Login from './pages/Login/Login';
@@ -14,6 +16,8 @@ function App() {
         <Route path='/signUp' element={<SignUp/>} />
         <Route path='/home' element={<Homepage/>} />
         <Route path='/card' element={<MainElement/>} />
+        <Route path='/card/1' element={<Card/>} />
+        <Route path='/category' element={<Category/>} />
       </Routes>
     </Router>
   );
